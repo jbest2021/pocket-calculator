@@ -98,26 +98,26 @@ function clear() {
 }
 
 
-function powers() {
-
-}
-
-
-function roots() {
-
-}
-
-
-function factorial() {
-
-}
-
-
-function constants() {
-
-}
-
-
-function trigonometry() {
-
-}
+// function powers() {
+//
+// }
+// 
+//
+// function roots() {
+//
+// }
+//
+//
+// function factorial() {
+//
+// }
+//
+//
+// function constants() {
+//
+// }
+//
+//
+// function trigonometry() {
+//
+// }

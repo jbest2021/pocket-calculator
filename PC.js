@@ -21,3 +21,4 @@ function numberNegation(){
 function numberPercentage(){
   document.calc.display.value=document.calc.display.value/100
 }
+

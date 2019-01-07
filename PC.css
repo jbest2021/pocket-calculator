@@ -1,1 +1,171 @@
+#divisionButton{
+  position:absolute;
+  left:802px;
+  top:148px;
+}
+#multiplcationButton{
+  position:absolute;
+  left:802px;
+  top:299px;
+}
+#subtractionButton{
+  position:absolute;
+  left:802px;
+  top:450px;
+}
+#additionButton{
+  position:absolute;
+  left:802px;
+  top:601px;
+}
+#equalButton{
+  position:absolute;
+  left:802px;
+  top:752px;
+}
+#decimalButton{
+  position:absolute;
+  left:651px;
+  top:752px;
+}
+#buttonNum0{
+  position:absolute;
+  left:349px;
+  top:752px;
+}
+#buttonNum1{
+  position:absolute;
+  left:349px;
+  top:601px;
+}
+#buttonNum2{
+  position:absolute;
+  left:500px;
+  top:601px;
+}
+#buttonNum3{
+  position:absolute;
+  left:651px;
+  top:601px;
+}
+#buttonNum4{
+  position:absolute;
+  left:349px;
+  top:450px;
+}
+#buttonNum5{
+  position:absolute;
+  left: 500px;
+  top: 450px;
+}
+#buttonNum6{
+  position:absolute;
+  left:651px;
+  top:450px;
+}
+#buttonNum7{
+position:absolute;
+left:349px;
+top:299px;
+}
+#buttonNum8{
+position:absolute;
+left:500px;
+top:299px;
+}
+#buttonNum9{
+position:absolute;
+left:651px;
+top:299px;
+}
+#clearButton{
+  position:absolute;
+  left:349px;
+  top:148px;
+}
+#negativeButton {
+  position: absolute;
+  left: 500px;
+  top: 148px;
+}
+#percentButton {
+  position: absolute;
+  left: 651px;
+  top: 148px;
+}
 
+button:hover {
+  background-color: #d9d9d9;
+  color: white;
+  transition-duration: 0.69s;
+}
+
+body {
+  background-color: black;
+}
+
+.calculator-screen {
+  width: ,100%;
+  font-size: 10px;
+  height: 250px;
+  border: none;
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.calc-buttons{
+  width:150px;
+  height: 150px;
+  background-color: #404040;
+  color: white;
+  border: 2px solid black;
+  font-size: 48px;
+  font-family: sans-serif;
+  border-radius: 50%;
+}
+.zero-button{
+  width:301px;
+  height: 150px;
+  background-color:  #404040;
+  color: white;
+  border: 2px solid black;
+  font-size: 48px;
+  font-family: sans-serif;
+  border-radius: 75px;
+  text-indent: -145px;
+}
+.function-buttons{
+  width:150px;
+  height: 150px;
+  background-color: orange;
+  color: white;
+  border: 2px solid black;
+  font-size: 48px;
+  font-family: sans-serif;
+  border-radius: 50%;
+}
+.clear-button{
+  width:150px;
+  height: 150px;
+  background-color: #999999;
+  color: black;
+  border: 2px solid black;
+  font-size: 48px;
+  border-radius: 50%;
+  font-family: sans-serif;
+}
+
+input{
+  width:599px;
+  height:125px;
+  position:absolute;
+  left:349px;
+  top:15px;
+  text-align: right;
+  font-size: 60px;
+  color:black;
+  border: solid black 2px;
+}

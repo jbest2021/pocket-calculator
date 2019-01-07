@@ -1,123 +1,23 @@
-function digit0() {
+function insert(num){
+  document.calc.display.value = document.calc.display.value + num;
+}
+function clearCalc(){
+  document.calc.display.value="";
 
 }
-
-
-function digit1() {
-
+function equal(){
+  let calcAnswer= document.calc.display.value;
+  if(calcAnswer){
+    document.calc.display.value=eval(calcAnswer);
+  }
+  if(document.calc.display.value === "Infinity") {
+    document.calc.display.value = "ERROR";
+  }
+}
+function numberNegation(){
+  document.calc.display.value=document.calc.display.value *-1
 }
 
-
-function digit1() {
-
+function numberPercentage(){
+  document.calc.display.value=document.calc.display.value/100
 }
-
-
-function digit2() {
-
-}
-
-
-function digit3() {
-
-}
-
-
-function digit4() {
-
-}
-
-
-function digit5() {
-
-}
-
-
-function digit6() {
-
-}
-
-
-function digit7() {
-
-}
-
-
-function digit8() {
-
-}
-
-
-function digit9() {
-
-}
-
-
-function decimal() {
-
-}
-
-
-function division() {
-
-}
-
-
-function multipllication() {
-
-}
-
-
-function subtraction() {
-
-}
-
-
-function addition() {
-
-}
-
-
-function equals() {
-
-}
-
-
-function percentage() {
-
-}
-
-
-function negation() {
-
-}
-
-
-function clear() {
-
-}
-
-
-// function powers() {
-//
-// }
-// 
-//
-// function roots() {
-//
-// }
-//
-//
-// function factorial() {
-//
-// }
-//
-//
-// function constants() {
-//
-// }
-//
-//
-// function trigonometry() {
-//
-// }

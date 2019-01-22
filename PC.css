@@ -94,14 +94,15 @@ left:651px;
 top:299px;
 }
 
+body{
+  background-image: url(" https://escapegamespdx.com/wp-content/uploads/2018/05/Film-Noir.jpg");
+  background-size: cover;
+}
 title {
     font-size: 10px;
     height: 250px;
     font color: black
 }
-
-Body {
-  background-color: white;
 
 }
 button:hover {
@@ -148,7 +149,7 @@ button:hover {
   height: 150px;
   background-color: #404040;
   color: white;
-  border: 2px solid black;
+  border: 2px solid white;
   font-size: 48px;
   font-family: sans-serif;
   border-radius: 50%;
@@ -156,7 +157,7 @@ button:hover {
 .clear-button{
   width:150px;
   height: 150px;
-  background-color: ##404040;
+  background-color: #404040;
   color: white;
   border: 2px solid white;
   font-size: 48px;

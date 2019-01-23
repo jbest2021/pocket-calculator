@@ -20,25 +20,43 @@
       </form>
       </div>
 
-   <button id="decimalB" class="calc-buttons" onclick="insert('.')">.</button>
+   <button id="decimalB" class="calc-buttons" onclick="decbutton('.')">.</button>
+  
     <button id="Num0" class=zero-button onclick="insert(0)">0</button>
+  
     <button id="Num1" class="calc-buttons" onclick="insert(1)">1</button>
+  
     <button id="Num2" class=calc-buttons onclick="insert(2)">2</button>
+  
     <button id="Num3" class=calc-buttons onclick="insert(3)">3</button>
+  
     <button id="Num4" class=calc-buttons onclick="insert(4)">4</button>
+  
     <button id="Num5" class=calc-buttons onclick="insert(5)">5</button>
+  
     <button id="Num6" class=calc-buttons onclick="insert(6)">6</button>
+  
     <button id="Num7" class="calc-buttons" onclick="insert(7)">7</button>
+  
     <button id="Num8" class="calc-buttons"onclick="insert(8)">8</button>
+  
     <button id="Num9" class="calc-buttons"onclick="insert(9)">9</button>
-    <button id="equalB" class="function-buttons" onclick="equal()">=</button>
-    <button id="additionB" class="function-buttons" onclick="insert('+')">+</button>
-    <button id="subtractionB" class=function-buttons onclick="insert('-')">-</button>
-    <button id="multiplcationB" class=function-buttons onclick="insert('*')">×</button>
-    <button id="divisionB" class=function-buttons onclick="insert('/')">÷</button>
-    <button id="clearB" class=clear-button onclick="clearCalc()">AC</button>
-    <button id="negativeB" class="clear-button">+/-</button>
-    <button id="percentB" class="clear-button">%</button>
+  
+    <button id="equalB" class="function-buttons" "equal" value = "=" onclick="equal()">=</button>
+  
+    <button id="additionB" class="function-buttons" name = "add" value = "+" onclick="insert('+'); cleanClick();">+</button>
+  
+    <button id="subtractionB" class=function-buttons name = "subtract" value = "-" onclick="insert('-'); cleanClick();">-</button>
+  
+    <button id="multiplcationB" class=function-buttons name = "multiply" value = "X" onclick = "insert('*'); clearClick();">×</button>
+  
+    <button id="divisionB" class=function-buttons name = "divide" value = "/" onclick = "insert('/'); cleanClick();">÷</button>
+  
+    <button id="clearB" class=clear-button name = "allClear" value = "AC" onclick="clearCalc()">AC</button>
+  
+    <button id="negativeB" class="clear-button" name = "negation" value = "+/-" onclick = "negation('+/-')">+/-</button>
+                                                                                           
+    <button id="percentB" class="clear-button" name = "percent" value = "%" onclick = "percentage('%');">%</button>
 
   </body>
 </html>

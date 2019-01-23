@@ -7,6 +7,7 @@ var decimalNum=false;
 var numlength=1;
 var ans='';
 var ansNum=false;
+
 function fourfunction(operation) {
   if(operation == '+' && symbol==true) {
     expression+="+";

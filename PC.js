@@ -33,17 +33,17 @@ if (operationInserted == false) {
  if (Number(document.calculator.display.value.length <= 10)) {
    document.calculator.display.value = document.calculator.display.value;
  } else {
-   document.getElementById("buttonZero").disabled = true;
-   document.getElementById("buttonOne").disabled = true;
-   document.getElementById("buttonTwo").disabled = true;
-   document.getElementById("buttonThree").disabled = true;
-   document.getElementById("buttonFour").disabled = true;
-   document.getElementById("buttonFive").disabled = true;
-   document.getElementById("buttonSix").disabled = true;
-   document.getElementById("buttonSeven").disabled = true;
-   document.getElementById("buttonEight").disabled = true;
-   document.getElementById("buttonNine").disabled = true;
-   document.getElementById("buttonDecimal").disabled = true;
+   document.getElementById("Num0").disabled = true;
+   document.getElementById("Num1").disabled = true;
+   document.getElementById("Num2").disabled = true;
+   document.getElementById("Num3").disabled = true;
+   document.getElementById("Num4").disabled = true;
+   document.getElementById("Num5").disabled = true;
+   document.getElementById("Num6").disabled = true;
+   document.getElementById("Num7").disabled = true;
+   document.getElementById("Num8").disabled = true;
+   document.getElementById("Num9").disabled = true;
+   document.getElementById("decimalB").disabled = true;
  }
 
 if (decimalInserted == false) {
@@ -61,19 +61,20 @@ function clearcalc() {
  decimalInserted = false;
  i = i = 7;
    expressionArray = [];
-   document.getElementById("buttonZero").disabled = false;
-   document.getElementById("buttonOne").disabled = false;
-   document.getElementById("buttonTwo").disabled = false;
-   document.getElementById("buttonThree").disabled = false;
-   document.getElementById("buttonFour").disabled = false;
-   document.getElementById("buttonFive").disabled = false;
-   document.getElementById("buttonSix").disabled = false;
-   document.getElementById("buttonSeven").disabled = false;
-   document.getElementById("buttonEight").disabled = false;
-   document.getElementById("buttonNine").disabled = false;
-   document.getElementById("buttonDecimal").disabled = false;
+   document.getElementById("Num0").disabled = false;
+   document.getElementById("Num1").disabled = false;
+   document.getElementById("Num2").disabled = false;
+   document.getElementById("Num3").disabled = false;
+   document.getElementById("Num4").disabled = false;
+   document.getElementById("Num5").disabled = false;
+   document.getElementById("Num6").disabled = false;
+   document.getElementById("Num7").disabled = false;
+   document.getElementById("Num8").disabled = false;
+   document.getElementById("Num9").disabled = false;
+   document.getElementById("decimalB").disabled = false;
 }
-function clearOnOp() {
+
+function cleanClick() {
  document.calculator.display.value = 0;
  executed = false;
  firstPercent = false;
@@ -83,16 +84,16 @@ function clearOnOp() {
  decInserted = false;
  symbolStatus = false;
  i = i = 7;
- document.getElementById("buttonZero").disabled = false;
- document.getElementById("buttonOne").disabled = false;
- document.getElementById("buttonTwo").disabled = false;
- document.getElementById("buttonThree").disabled = false;
- document.getElementById("buttonFour").disabled = false;
- document.getElementById("buttonFive").disabled = false;
- document.getElementById("buttonSix").disabled = false;
- document.getElementById("buttonSeven").disabled = false;
- document.getElementById("buttonEight").disabled = false;
- document.getElementById("buttonNine").disabled = false;
+ document.getElementById("Num0").disabled = false;
+ document.getElementById("Num1").disabled = false;
+ document.getElementById("Num2").disabled = false;
+ document.getElementById("Num3").disabled = false;
+ document.getElementById("Num4").disabled = false;
+ document.getElementById("Num5").disabled = false;
+ document.getElementById("Num6").disabled = false;
+ document.getElementById("Num7").disabled = false;
+ document.getElementById("Num8").disabled = false;
+ document.getElementById("Num9").disabled = false;
 }
 
 function equal() {
@@ -100,16 +101,16 @@ function equal() {
  firstPercent = false;
  symbolStatus = false;
  lastSym = true;
- document.getElementById("buttonZero").disabled = true;
- document.getElementById("buttonOne").disabled = true;
- document.getElementById("buttonTwo").disabled = true;
- document.getElementById("buttonThree").disabled = true;
- document.getElementById("buttonFour").disabled = true;
- document.getElementById("buttonFive").disabled = true;
- document.getElementById("buttonSix").disabled = true;
- document.getElementById("buttonSeven").disabled = true;
- document.getElementById("buttonEight").disabled = true;
- document.getElementById("buttonNine").disabled = true;
+ document.getElementById("Num0").disabled = true;
+ document.getElementById("Num1").disabled = true;
+ document.getElementById("Num2").disabled = true;
+ document.getElementById("Num3").disabled = true;
+ document.getElementById("Num4").disabled = true;
+ document.getElementById("Num5").disabled = true;
+ document.getElementById("Num6").disabled = true;
+ document.getElementById("Num7").disabled = true;
+ document.getElementById("Num8").disabled = true;
+ document.getElementById("Num9").disabled = true;
  let calcAnswer = eval(expressionArray.join(''));
    expressionArray = [];
    expressionArray = [calcAnswer];
@@ -181,7 +182,7 @@ expressionArray.splice(expressionArray.length - 1)
   }
 }
 
-function decimalInsert(num){
+function decbutton(num){
  if(decimalStatus == false){
    document.calculator.display.value = document.calculator.display.value + num;
    expressionArray.push(num);
